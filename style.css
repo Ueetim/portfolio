@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: teal;
+    --dark: #014b4b;
+    --light: #01afaf;
+}
+
+.dflex {
+    display: flex;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* nav */
+
+.nav {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 600;
+}
+
+.nav-items {
+    height: max-content;
+}
+
+.nav-item {
+    height: 60px;
+    width: 60px;
+    padding: 0 20px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    margin: 0 0 10px 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.nav-item span {
+    display: none;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.nav-item:hover {
+    background-color: var(--dark);
+    color: white;
+    width: 130px;
+    transition: .2s ease-in;
+}
+
+.nav-item:hover span {
+    display: block;
+    animation: nav-item .3s ease-in;
+
+}
+
+@keyframes nav-item {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+/* nav ends */
+
+/* main section */
+
+main {
+    width: 100%;
+}
+
+.section {
+    padding: 100px 170px;
+}
+
+#hero {
+    height: 100vh;
+    background-image: url(images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-color: #00000098;
+    background-blend-mode: overlay;
+}
+
+#hero > div {
+    width: 100%;
+    padding-left: 170px;
+}
+
+#hero > div h1 {
+    font-size: 50px;
+    color: #f2f2f2;
+}
+
+#hero .name {
+    color: var(--light);
+}
+
+#hero h1 + p {
+    font-size: 25px;
+    color: #b6bfc8;
+}
+
+/* about */
+.section-header {
+    text-align: center;
+}
+
+.section-header hr {
+    width: 50px;
+    margin: auto;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+
+/* main section ends */
