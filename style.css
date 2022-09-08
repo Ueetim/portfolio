@@ -28,6 +28,10 @@ html {
     justify-content: center;
 }
 
+.f-column {
+    flex-direction: column;
+}
+
 .bg {
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,20 +42,19 @@ html {
 }
 
 h1, h2, p {
-    /* Font minimum, preferred and maximum value */
     font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 /* Font size variables */
 h1 {
-    --min: 2em; /* minimum value */
-    --val: 5vw; /* preferred value = 5% viewport width */
-    --max: 3.5em; /* maximum value */
+    --min: 2em;
+    --val: 5vw;
+    --max: 3.5em;
 }
 h2 {
-    --min: 1.5em;   /* minimum value */
-    --val: 4vw;     /* preferred value = 4% viewport width */
-    --max: 2em;  /* maximum value */
+    --min: 1.5em; 
+    --val: 4vw;  
+    --max: 2em; 
 }
 p {
     --min: 1em;
@@ -81,11 +84,9 @@ p {
     width: 60px;
     border: none;
     padding: 0 20px;
-    /* background-color: var(--primary); */
     background-color: #f2f3f5;
     border-radius: 30px;
     margin: 0 0 10px 20px;
-    /* color: white; */
     color: #686767;
     font-size: 20px;
     cursor: pointer;
@@ -93,7 +94,6 @@ p {
 }
 
 .nav-item ion-icon {
-
     filter: drop-shadow(0 0 0 black);
 }
 
@@ -104,7 +104,6 @@ p {
 }
 
 .nav-item:hover {
-    /* background-color: var(--dark); */
     background-color: var(--primary);
     color: white;
     width: 130px;
@@ -140,6 +139,10 @@ main {
     padding: 100px 170px;
 }
 
+.section2 {
+    padding: 0 170px;
+}
+
 #hero {
     height: 100vh;
     background-image: url(images/hero-bg.jpg);
@@ -166,12 +169,9 @@ main {
 }
 
 /* about */
-/* .section-header {
-    text-align: center;
-} */
 
 .section-header hr {
-    width: 150px;
+    width: 100px;
     height: 2px;
     border: 1px solid var(--primary);
     background-color: var(--primary);
@@ -190,7 +190,6 @@ main {
 .about-img, .about-img-outline {
     height: 360px;
     width: 280px;
-    /* background-image: url('images/img.jpg'); */
     background-color: black;
     border-radius: 3px;
 }
@@ -220,6 +219,63 @@ main {
 .about-content .icon {
     color: var(--primary);
     margin-right: 5px;
+}
+
+/* portfolio */
+.projects {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 20px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.projects .project {
+    height: 300px;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.projects .project:hover {
+    box-shadow: 0px 3px 5px 3px #0000001f;
+    transform: translateY(-4px);
+    transition: .2s;
+}
+
+.project-info {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: #f2f2f2e5;
+    padding: 20px;
+}
+
+.project-info ion-icon {
+    font-size: 40px;
+    color: var(--primary);
+    height: 40px;
+}
+
+.project-details {
+    height: calc(100% - 40px);
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.projects .project:hover .project-name {
+    color: var(--primary);
+    transition: .2s;
 }
 
 
