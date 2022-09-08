@@ -278,5 +278,33 @@ main {
     transition: .2s;
 }
 
+/* contact */
+#contact p {
+    text-align: center;
+    color: var(--gray);
+    line-height: 30px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social-item {
+    border: none;
+    background-color: var(--primary);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 5px;
+}
+
+.social-item:hover {
+    background-color: var(--light);
+    transition: .2s;
+}
 
 /* main section ends */
