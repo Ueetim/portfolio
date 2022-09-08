@@ -19,22 +19,30 @@
 
     <div class="nav dflex a-center j-center">
         <div class="nav-items">
-            <div class="nav-item dflex a-center">
-                <ion-icon name="home-outline"></ion-icon>
-                <span>Home</span>
-            </div>
-            <div class="nav-item dflex a-center">
-                <ion-icon name="person-outline"></ion-icon>
-                <span>About</span>
-            </div>
-            <div class="nav-item dflex a-center">
-                <ion-icon name="grid-outline"></ion-icon>
-                <span>Portfolio</span>
-            </div>
-            <div class="nav-item dflex a-center">
-                <ion-icon name="mail-outline"></ion-icon>
-                <span>Contact</span>
-            </div>
+            <a href="#hero">
+                <button class="nav-item dflex a-center">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Home</span>
+                </button>
+            </a>
+            <a href="#about">
+                <button class="nav-item dflex a-center">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span>About</span>
+                </button>
+            </a>
+            <a href="#portfolio">
+                <button class="nav-item dflex a-center">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <span>Portfolio</span>
+                </button>
+            </a>
+            <a href="#contact">
+                <button class="nav-item dflex a-center">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>Contact</span>
+                </button>
+            </a>
         </div>
     </div>
 
@@ -53,8 +61,30 @@
         <!-- about -->
         <section id="about" class="section">
             <div class="section-header">
-                <h2>ABOUT</h2>
+                <h2>About Me</h2>
                 <hr>
+            </div>
+            <div class="about-info dflex">
+                <div class="about-content">
+                    <p>Hello! My name is Uduak and I enjoy creating things that live on the web. My web development journey started in 2018 when I signed up for FreeCodeCamp's Responsive Web Design course. I have strong passion for creating intuitive, dynamic user experiences.</p>
+                    <p class="new-paragraph">Here are a few technologies I have worked with recently:</p>
+                    <ul class="dflex">
+                        <div>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> HTML</li>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> CSS</li>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> JavaScript</li>
+                        </div>
+                        <div>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> Angular</li>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> TypeScript</li>
+                            <li class="dflex a-center"><ion-icon name="disc" class="icon"></ion-icon> PHP</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="about-img-container">
+                    <div class="about-img bg"></div>
+                    <div class="about-img-outline"></div>
+                </div>
             </div>
         </section>
     </main>
