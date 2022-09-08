@@ -37,12 +37,21 @@ html {
     background-repeat: no-repeat;
 }
 
+.m-width {
+    max-width: 1300px;
+    margin: auto;
+}
+
 .new-paragraph {
     margin-top: 15px;
 }
 
 h1, h2, p {
     font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+p {
+    line-height: 30px;
 }
 
 /* Font size variables */
@@ -91,6 +100,7 @@ p {
     font-size: 20px;
     cursor: pointer;
     transition: .2s ease-in;
+    outline: none;
 }
 
 .nav-item ion-icon {
@@ -145,6 +155,7 @@ main {
 
 #hero {
     height: 100vh;
+    width: 100%;
     background-image: url(images/hero-bg.jpg);
     background-color: #ffffffb4;
     background-blend-mode: overlay;
@@ -165,7 +176,7 @@ main {
 
 #hero h1 + p {
     color: #5a5a5a;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 /* about */
@@ -185,6 +196,7 @@ main {
 
 .about-img-container {
     position: relative;
+    width: max-content;
 }
 
 .about-img, .about-img-outline {
@@ -205,11 +217,11 @@ main {
 
 .about-content {
     color: var(--gray);
-    line-height: 30px;
 }
 
 .about-content ul {
     list-style: none;
+    line-height: 30px;
 }
 
 .about-content ul > div {
@@ -227,7 +239,7 @@ main {
     align-items: center;
     width: 100%;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 20px;
 }
 
@@ -282,7 +294,6 @@ main {
 #contact p {
     text-align: center;
     color: var(--gray);
-    line-height: 30px;
 }
 
 .social {
@@ -300,6 +311,7 @@ main {
     cursor: pointer;
     transition: .2s;
     margin: 5px;
+    outline: none;
 }
 
 .social-item:hover {
@@ -308,3 +320,54 @@ main {
 }
 
 /* main section ends */
+
+/* media queries */
+
+@media only screen and (max-width: 850px) {
+    .section {
+        padding: 100px 30px;
+    }
+
+    .section2 {
+        padding: 0 30px;
+    }
+
+    #hero > div {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .about-info {
+        flex-direction: column-reverse;
+    }
+
+    .about-content ul {
+        width: max-content;
+        margin: auto;
+    }
+
+    .about-img-container {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    hr {
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .section, .section2, #hero > div {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .about-img-outline{
+        display: none;
+    }
+
+    .about-img {
+        min-width: 100%;
+    }
+}
