@@ -11,8 +11,6 @@ html {
 
 :root {
     --primary: #0563bb;
-    --dark: #013464;
-    --light: #1d87eb;
     --gray: #494949;
 }
 
@@ -123,7 +121,6 @@ p {
 .nav-item:hover span {
     display: block;
     animation: nav-item .3s ease-in;
-
 }
 
 @keyframes nav-item {
@@ -135,6 +132,23 @@ p {
         opacity: 1;
         display: block;
     }
+}
+
+.nav-btn {
+    background-color: var(--primary);
+    color: white;
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    outline: none;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-btn:hover {
+    width: 60px;
+    background-color: #014280;
 }
 
 /* nav ends */
@@ -315,7 +329,7 @@ main {
 }
 
 .social-item:hover {
-    background-color: var(--light);
+    background-color: #024483;
     transition: .2s;
 }
 
@@ -334,6 +348,28 @@ main {
 
     #hero > div {
         padding: 50px;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav:hover .nav-items {
+        display: block;
+        animation: fade .3s ease-in;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
 
