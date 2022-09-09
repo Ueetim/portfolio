@@ -140,12 +140,13 @@ p {
     background-color: var(--primary);
     color: white;
     display: none;
-    position: absolute;
-    bottom: 25px;
+    position: fixed;
+    bottom: 10px;
     left: 0px;
     box-shadow: none;
     width: 60px;
     height: 60px;
+    z-index: 500;
 }
 
 .nav-btn:hover {
