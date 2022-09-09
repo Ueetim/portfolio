@@ -138,6 +138,7 @@ p {
 
 .nav-btn {
     background-color: var(--primary);
+    position: relative;
     color: white;
     display: none;
     position: fixed;
@@ -148,6 +149,31 @@ p {
     height: 60px;
     z-index: 500;
 }
+
+.menu-btn {
+    width: 27px;
+    margin-left: -3px;
+  }
+  
+  .menu-btn:before,
+  .menu-btn:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+    transition: all 200ms ease-in-out;
+  }
+  .menu-btn:before {
+    box-shadow: 0 10px 0 #fff;
+    margin-bottom: 16px;
+  }
+  .nav-btn:hover .menu-btn:before {
+    box-shadow: 0 0 0 #fff;
+    transform: translateY(10px) rotate(45deg);
+  }
+  .nav-btn:hover .menu-btn:after{
+    transform: translateY(-10px) rotate(-45deg);
+  }
 
 .nav-btn:hover {
     width: 60px;
