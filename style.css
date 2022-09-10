@@ -246,6 +246,7 @@ p {
     width: 60px;
     height: 60px;
     z-index: 500;
+    animation: cancelAnim .2s ease;
 }
 
 .menu-btn {
@@ -276,6 +277,16 @@ p {
 .nav-btn:hover {
     width: 60px;
     background-color: #014280;
+    animation: cancelAnim .2s ease;
+}
+
+@keyframes cancelAnim {
+    from {
+        height: 60px;
+    }
+    to {
+        height: 60px;
+    }
 }
 
 /* nav ends */
