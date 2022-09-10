@@ -3,15 +3,15 @@ const preloader = document.querySelector('.preloader');
 const main = document.querySelector('.main');
 
 window.addEventListener('load', ()=>{
-    window.setTimeout(()=>{
-        preloader.style.display = 'none';
-        main.style.visibility = 'visible';
-        document.body.style.overflowY = 'auto';
-    }, 2000);
+    // window.setTimeout(()=>{
+    //     preloader.style.display = 'none';
+    //     main.style.visibility = 'visible';
+    //     document.body.style.overflowY = 'auto';
+    // }, 2000);
 
     window.setTimeout(()=>{
         typeWriter();
-    }, 3500);
+    }, 1600);
 })
 
 // text typing effect

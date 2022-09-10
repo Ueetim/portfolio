@@ -10,10 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     height: 100vh;
     overflow-y: hidden;
-}
+} */
 
 :root {
     --primary: #0563bb;
@@ -295,7 +295,7 @@ p {
 
 main {
     width: 100%;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .section {
