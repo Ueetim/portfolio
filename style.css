@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 :root {
     --primary: #0563bb;
     --gray: #494949;
@@ -77,6 +82,7 @@ p {
     position: fixed;
     z-index: 100000;
     background-color: white;
+    /* display: none; */
 }
 
 .mesh-loader {
@@ -170,8 +176,9 @@ p {
     color: #686767;
     font-size: 20px;
     cursor: pointer;
-    transition: .2s ease-in;
+    /* transition: .2s ease-in; */
     outline: none;
+    animation: reduce .2s ease-in;
 }
 
 .nav-item ion-icon {
@@ -188,7 +195,27 @@ p {
     background-color: var(--primary);
     color: white;
     width: 130px;
-    transition: .2s ease-in;
+    animation: enlarge .2s ease-in;
+}
+
+@keyframes enlarge {
+    from {
+        width: 60px;
+    }
+    to {
+        width: 130px;
+    }
+}
+
+@keyframes reduce {
+    from {
+        width: 130px;
+        background-color: var(--primary);
+    }
+    to {
+        width: 60px;
+        background-color: #f2f3f5;
+    }
 }
 
 .nav-item:hover span {
@@ -257,7 +284,7 @@ p {
 
 main {
     width: 100%;
-    display: none;
+    visibility: hidden;
 }
 
 .section {
@@ -274,6 +301,14 @@ main {
     background-image: url(images/hero-bg.jpg);
     background-color: #ffffffb4;
     background-blend-mode: overlay;
+    max-height: 1000px;
+}
+
+@media screen and (min-width: 1500px){
+    #hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 #hero > div {
@@ -292,6 +327,7 @@ main {
 #hero h1 + p {
     color: #5a5a5a;
     font-size: 23px;
+    height: 30px;
 }
 
 /* about */
