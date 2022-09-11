@@ -10,11 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body {
-    height: 100vh;
-    overflow-y: hidden;
-} */
-
 :root {
     --primary: #0563bb;
     --gray: #494949;
@@ -252,6 +247,11 @@ p {
 .menu-btn {
     width: 27px;
     margin-left: -3px;
+    margin-top: 18px;
+  }
+
+  #check {
+    display: none;
   }
   
   .menu-btn:before,
@@ -266,11 +266,11 @@ p {
     box-shadow: 0 10px 0 #fff;
     margin-bottom: 16px;
   }
-  .nav-btn:hover .menu-btn:before {
+  #check:checked + .nav-btn .menu-btn:before {
     box-shadow: 0 0 0 #fff;
     transform: translateY(10px) rotate(45deg);
   }
-  .nav-btn:hover .menu-btn:after{
+  #check:checked + .nav-btn > .menu-btn:after{
     transform: translateY(-10px) rotate(-45deg);
   }
 
@@ -518,7 +518,7 @@ main {
         display: none;
     }
 
-    .nav:hover .nav-items {
+    #check:checked ~ .nav-items {
         display: block;
         animation: fade .3s ease-in;
     }
