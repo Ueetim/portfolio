@@ -328,6 +328,15 @@ main {
     text-decoration: none;
 }
 
+.resume:active {
+    color: purple;
+    text-decoration: none;
+}
+
+.resume:hover {
+    text-decoration: underline;
+}
+
 /* portfolio */
 .projects {
     display: grid;
