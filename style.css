@@ -79,6 +79,7 @@ p {
     z-index: 600;
 }
 
+
 .nav-items {
     height: max-content;
 }
@@ -119,6 +120,11 @@ p {
     color: white;
     width: 130px;
     animation: enlarge .2s ease-in;
+}
+
+.active {
+    background-color: var(--primary);
+    color: white;
 }
 
 @keyframes enlarge {
