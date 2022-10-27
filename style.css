@@ -298,8 +298,8 @@ main {
 .about-img, .about-img-outline {
     height: 360px;
     width: 280px;
-    /* background-color: black; */
-    background-image: url(images/etim.jpg);
+    background-color: black;
+    /* background-image: url(images/etim.jpg); */
     border-radius: 3px;
 }
 
