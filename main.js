@@ -1,6 +1,13 @@
 // projects list
 let projects = [
   {
+    name: 'Eelclip',
+    desc: 'Client-side application for Eelclip, a text-to-video SaaS for creating amazing AI voice-overs',
+    lang: 'HTML, CSS, TS, Angular',
+    imgUrl: 'images/projects/eelclip.png',
+    link: 'https://eelclip.com'
+  },
+  {
     name: 'Food Fusion',
     desc: 'A simple food ecommerce platform interface implemented with Angular and TypeScript',
     lang: 'HTML, CSS, TS, Angular',
