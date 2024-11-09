@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -246,7 +248,7 @@ main {
     background-image: url(images/hero-bg.jpg);
     background-color: #ffffffb4;
     background-blend-mode: overlay;
-    max-height: 1000px;
+    text-align: center;
 }
 
 @media screen and (min-width: 1500px){
@@ -258,7 +260,6 @@ main {
 
 #hero > div {
     width: 100%;
-    padding-left: 170px;
 }
 
 #hero > div h1 {
@@ -300,6 +301,7 @@ main {
     width: 280px;
     background-color: black;
     background-image: url(images/profile.jpg);
+    background-position: center;
     border-radius: 3px;
 }
 

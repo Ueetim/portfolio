@@ -2,10 +2,17 @@
 let projects = [
   {
     name: 'Eelclip',
-    desc: 'Client-side application for Eelclip, a text-to-video SaaS for creating amazing AI voice-overs',
-    lang: 'HTML, CSS, TS, Angular',
+    desc: 'A video creation app enabling scene-based editing with drag-and-drop asset management for fast, customizable video production.',
+    lang: 'TS, Angular, RxJS, Tailwind',
     imgUrl: 'images/projects/eelclip.png',
     link: 'https://eelclip.com'
+  },
+  {
+    name: 'Tramatch',
+    desc: 'Tramatch is a faith-based dating app connecting individuals with shared values for meaningful, lasting relationships.',
+    lang: 'TS, Angular, SocketIO, Jasmine/Karma',
+    imgUrl: 'images/projects/tramatch.png',
+    link: 'https://www.tramatch.com'
   },
   {
     name: 'Food Fusion',
@@ -35,20 +42,20 @@ let projects = [
     imgUrl: 'images/projects/basita.png',
     link: 'https://basitabrimix.com'
   },
-  {
-    name: 'Senpai Academy',
-    desc: "A school that makes a difference...",
-    lang: 'HTML, CSS, JS',
-    imgUrl: 'images/projects/senpai.png',
-    link: 'https://senpaiacademy.netlify.app'
-  },
-  {
-    name: 'Hotel Pablo',
-    desc: "The best place to stay!!!",
-    lang: 'HTML, CSS, JS',
-    imgUrl: 'images/projects/hotel.png',
-    link: 'https://hotelpablo.netlify.app'
-  }
+  // {
+  //   name: 'Senpai Academy',
+  //   desc: "A school that makes a difference...",
+  //   lang: 'HTML, CSS, JS',
+  //   imgUrl: 'images/projects/senpai.png',
+  //   link: 'https://senpaiacademy.netlify.app'
+  // },
+  // {
+  //   name: 'Hotel Pablo',
+  //   desc: "The best place to stay!!!",
+  //   lang: 'HTML, CSS, JS',
+  //   imgUrl: 'images/projects/hotel.png',
+  //   link: 'https://hotelpablo.netlify.app'
+  // }
 ]
 
 window.addEventListener('load', ()=>{
@@ -105,7 +112,7 @@ projects.forEach((project) => {
                     <p class="project-name"><strong>${project.name}</strong></p>
                     <p><small>${project.desc}</p>
                 </div>
-                <p><small>${project.lang}</small></p>
+                <p>${project.lang}</p>
             </div>
         </div>
     </div>
