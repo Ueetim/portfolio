@@ -101,3 +101,16 @@ body {
 section[id] {
     scroll-margin-top: 2rem;
 }
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: none;
+    /* hides scrollbar */
+    -ms-overflow-style: none;
+    /* for IE and Edge */
+}
