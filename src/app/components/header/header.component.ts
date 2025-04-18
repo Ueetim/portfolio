@@ -10,7 +10,6 @@ import { TypewriterComponent } from "../typewriter/typewriter.component";
 export class HeaderComponent {
   typewriterPhrases: string[] = [
     'Full-Stack Developer',
-    'UI/UX Designer',
     'Problem Solver',
     'Tech Enthusiast',
     'Angular Expert'

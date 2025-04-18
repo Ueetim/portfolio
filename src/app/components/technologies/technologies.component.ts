@@ -13,18 +13,19 @@ interface TechCategory {
   styleUrl: './technologies.component.css'
 })
 export class TechnologiesComponent {
-  techCategories: TechCategory[] = [
-    {
-      name: 'Frontend',
-      technologies: ['Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'SASS', 'RxJS']
-    },
-    {
-      name: 'Backend',
-      technologies: ['Node.js', 'Express', 'NestJS', 'MongoDB', 'PostgreSQL', 'RESTful APIs', 'GraphQL']
-    },
-    {
-      name: 'Tools & Others',
-      technologies: ['Git', 'Docker', 'CI/CD', 'Jest', 'Cypress', 'Figma', 'Webpack', 'NPM']
-    }
+  technologies = [
+    { name: 'Angular', icon: 'angular' },
+    { name: 'JavaScript', icon: 'javascript' },
+    { name: 'TypeScript', icon: 'typescript' },
+    { name: 'RxJS', icon: 'rxjs' },
+    { name: 'Tailwind CSS', icon: 'tailwind' },
+    { name: 'CSS3', icon: 'css' },
+    { name: 'HTML5', icon: 'html' },
+    { name: 'Sass', icon: 'sass' },
+    { name: 'Flutter', icon: 'flutter' },
+    { name: 'Go (Golang)', icon: 'go' },
+    { name: 'PostgreSQL', icon: 'postgres' },
+    { name: 'MySQL', icon: 'mysql' },
+    { name: 'Git', icon: 'git' },
   ];
 }
