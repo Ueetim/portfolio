@@ -18,7 +18,6 @@ import * as AOS from 'aos';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
   activeSection: string = 'about';
   shootingStars: any[] = [];
   scrollY: number = 0;
