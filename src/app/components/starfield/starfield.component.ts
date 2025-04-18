@@ -12,6 +12,8 @@ export class StarfieldComponent {
   private scene!: THREE.Scene;
   private renderer!: THREE.WebGLRenderer;
   private stars!: THREE.Points;
+  shootingStars: THREE.Mesh[] = [];
+  lastShootTime = 0;
 
   constructor(private el: ElementRef) {}
 
@@ -85,12 +87,55 @@ export class StarfieldComponent {
     return texture;
   }  
 
+  createShootingStar(): THREE.Mesh {
+    const geometry = new THREE.SphereGeometry(0.1, 8, 8); // Small sphere
+    const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  
+    const star = new THREE.Mesh(geometry, material);
+  
+    // Random start position (top-left quadrant)
+    star.position.set(
+      THREE.MathUtils.randFloatSpread(100) - 50,
+      50,
+      THREE.MathUtils.randFloat(-20, -10)
+    );
+  
+    // Add to scene and tracking array
+    this.scene.add(star);
+    this.shootingStars.push(star);
+    return star;
+  }  
+
   animate = () => {
     requestAnimationFrame(this.animate);
+  
+    // Rotate stars
     this.stars.rotation.y += 0.0005;
     this.stars.rotation.x += 0.0003;
+  
+    // Shooting stars every ~4 seconds
+    const now = Date.now();
+    if (now - this.lastShootTime > 4000 + Math.random() * 2000) {
+      const shootingStar = this.createShootingStar();
+      shootingStar.userData['startTime'] = now;
+      this.lastShootTime = now;
+    }
+  
+    // Animate shooting stars
+    this.shootingStars.forEach((star, index) => {
+      star.position.x += 0.5;
+      star.position.y -= 0.3;
+  
+      // Fade and remove after 2s
+      const age = now - (star.userData['startTime'] || 0);
+      if (age > 2000) {
+        this.scene.remove(star);
+        this.shootingStars.splice(index, 1);
+      }
+    });
+  
     this.renderer.render(this.scene, this.camera);
-  };
+  };  
 
   @HostListener('window:resize')
   onResize() {

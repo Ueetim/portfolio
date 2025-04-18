@@ -2,32 +2,15 @@
   <div class="fixed top-0 left-0 opacity-80">
     <app-starfield></app-starfield>
   </div>
+
+  <div id="cursor-light"></div>
+
   <!-- Parallax background layers -->
   <div class="parallax-container absolute inset-0 z-0">
-    <!-- Far stars layer (moves slowest) -->
-    <!-- <div class="stars-container-far absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.far + 'px)'"></div> -->
-
-    <!-- Mid stars layer -->
-    <!-- <div class="stars-container-mid absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.mid + 'px)'"></div> -->
-
-    <!-- Near stars layer (moves fastest) -->
-    <!-- <div class="stars-container-near absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.near + 'px)'"></div> -->
-
     <!-- Nebula effect -->
     <div class="nebula-effect absolute inset-0 z-0 opacity-90"
       [style.transform]="'translateY(' + parallaxOffsets.nebula + 'px)'"></div>
   </div>
-
-  <!-- Shooting stars container -->
-  <!-- <div class="shooting-stars-container absolute inset-0 z-0 overflow-hidden bg-transparent">
-    <div *ngFor="let star of shootingStars" class="shooting-star absolute" [style.left.px]="star.left"
-      [style.top.px]="star.top" [style.width.px]="star.width" [style.transform]="'rotate(' + star.angle + 'deg)'"
-      [style.animation-delay]="star.delay + 's'">
-    </div>
-  </div> -->
 
   <!-- Main content container -->
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
