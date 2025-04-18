@@ -17,28 +17,28 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online store with product catalog, shopping cart, and secure checkout process.',
-      technologies: ['Angular', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#'
+      title: 'Eelclip',
+      description: 'A video creation tool that enables users to assemble scenes and add assets via a drag-and-drop interface, designed for intuitive content creation.',
+      technologies: ['Angular 17', 'RxJS', 'Karma', 'Tailwind CSS', 'HTML5 Canvas'],
+      link: 'https://eelclip.com'
     },
     {
-      title: 'Task Management App',
-      description: 'A productivity application for teams to manage projects, tasks, and deadlines with real-time updates.',
-      technologies: ['Angular', 'RxJS', 'Firebase', 'Tailwind CSS'],
-      link: '#'
+      title: 'Tramatch',
+      description: 'A faith-based dating platform focused on matching like-minded individuals. Features include geolocation, dynamic forms, and responsive UI.',
+      technologies: ['Angular', 'Angular Material', 'HTML5', 'CSS3', 'REST APIs'],
+      link: 'https://www.tramatch.com'
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing projects and skills with modern design principles.',
-      technologies: ['Angular', 'Tailwind CSS', 'GSAP', 'Netlify'],
-      link: '#'
+      title: 'Webintel',
+      description: 'A website analytics and performance monitoring app offering SEO recommendations and AI-driven insights for digital growth.',
+      technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'AI APIs'],
+      link: 'https://webintel.netlify.app'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'An interactive weather application providing real-time forecasts and historical weather data.',
-      technologies: ['Angular', 'Chart.js', 'Weather API', 'Geolocation'],
-      link: '#'
+      title: 'Top 100',
+      description: 'A platform that ranks the top 100 entities across various industries based on performance, relevance, and data-driven metrics.',
+      technologies: ['Angular', 'Tailwind CSS', 'TypeScript', 'REST APIs', 'Chart.js'],
+      link: 'https://thetop100.netlify.app'
     }
-  ];
+  ];  
 }

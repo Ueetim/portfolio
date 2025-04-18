@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
-  @Input() activeSection: string = 'about';
-  navItems = ['About', 'Experience', 'Projects', 'Technologies', 'Contact'];
+  @Input() activeSection: string = 'home';
+  navItems = ['Home', 'About', 'Experience', 'Projects', 'Technologies', 'Contact'];
 }

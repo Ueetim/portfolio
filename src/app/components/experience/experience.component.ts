@@ -17,16 +17,28 @@ interface Experience {
 export class ExperienceComponent {
   experiences: Experience[] = [
     {
-      period: '2023 - Present',
-      company: 'Quantum Digital',
-      title: 'Senior Frontend Developer',
-      description: 'Leading the development of responsive web applications using Angular and modern frontend technologies. Implemented state management solutions, optimized performance, and mentored junior developers. Collaborated with design and backend teams to deliver seamless user experiences across multiple projects.'
+      period: 'Dec 2024 – Present',
+      company: 'Mixt Technologies (Remote, Part-Time)',
+      title: 'Frontend Developer',
+      description: 'Developing Webintel — a website analytics and performance monitoring app that offers SEO recommendations and AI-driven insights. Collaborating with a cross-functional team to implement clean code practices, performance optimizations, and scalable frontend solutions.'
     },
     {
-      period: '2021 - 2023',
-      company: 'TechNova Solutions',
-      title: 'Full-Stack Engineer',
-      description: 'Developed and maintained various web applications using Angular, Node.js, and MongoDB. Created RESTful APIs, implemented authentication systems, and integrated third-party services. Participated in agile development processes and contributed to architectural decisions for scalable applications.'
+      period: 'Dec 2022 – Present',
+      company: 'Tramatch LTD (Remote)',
+      title: 'Lead Frontend Developer',
+      description: 'Led the development of Tramatch, a faith-based dating platform. Used Angular to improve responsiveness and reduce load times by 40%, enhancing user engagement. Collaborated with designers to build adaptive interfaces with HTML5, CSS3, and Angular Material. Integrated third-party services, optimized performance with lazy loading and caching, and implemented robust validation, leading to measurable improvements in UX and data accuracy.'
+    },
+    {
+      period: 'Nov 2021 – May 2022',
+      company: 'Taquatech Limited (Uyo, Nigeria)',
+      title: 'Junior Frontend Developer',
+      description: 'Contributed to building a Requisition Management System and Academa, a scalable school management platform supporting 1000+ users. Enhanced operational efficiency and satisfaction across clients by delivering responsive apps, optimizing interfaces, and implementing UX improvements.'
+    },
+    {
+      period: '2023 – Present',
+      company: 'Eelclip (Side Project)',
+      title: 'Frontend Developer & Co-Founder',
+      description: 'Co-founded and built Eelclip, a video creation platform with a drag-and-drop interface. Developed the frontend in Angular 17, established testing with Karma for improved reliability, and standardized code practices to reduce technical debt and increase code coverage by 25%.'
     }
-  ];
+  ];  
 }

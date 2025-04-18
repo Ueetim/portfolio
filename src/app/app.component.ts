@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from "./components/navigation/navigation.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { AboutComponent } from "./components/about/about.component";
@@ -10,10 +9,11 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { NavigationMobileComponent } from "./components/navigation-mobile/navigation-mobile.component";
 import { CommonModule } from '@angular/common';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
-  imports: [NavigationComponent, HeaderComponent, AboutComponent, ExperienceComponent, TechnologiesComponent, ContactComponent, FooterComponent, ProjectsComponent, NavigationMobileComponent, CommonModule],
+  imports: [NavigationComponent, HeaderComponent, AboutComponent, ExperienceComponent, TechnologiesComponent, ContactComponent, FooterComponent, ProjectsComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -37,6 +37,13 @@ export class AppComponent {
 
     // Set up intersection observer for section tracking
     this.setupSectionObserver();
+
+    AOS.init({
+      duration: 800, // optional - animation duration
+      easing: 'ease-in-out', // optional - animation easing
+      once: true, // optional - whether animation should happen only once
+      mirror: false // optional - whether elements should animate out while scrolling past them
+    });
   }
 
   createShootingStars() {
