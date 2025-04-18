@@ -10,10 +10,11 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 import { NavigationMobileComponent } from "./components/navigation-mobile/navigation-mobile.component";
 import { CommonModule } from '@angular/common';
 import * as AOS from 'aos';
+import { StarfieldComponent } from "./components/starfield/starfield.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavigationComponent, HeaderComponent, AboutComponent, ExperienceComponent, TechnologiesComponent, ContactComponent, FooterComponent, ProjectsComponent, CommonModule],
+  imports: [NavigationComponent, HeaderComponent, AboutComponent, ExperienceComponent, TechnologiesComponent, ContactComponent, FooterComponent, ProjectsComponent, CommonModule, StarfieldComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

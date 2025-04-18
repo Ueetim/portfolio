@@ -1,20 +1,23 @@
 <div class="min-h-screen bg-gradient-to-b from-black to-slate-950 text-white relative overflow-hidden">
+  <div class="fixed top-0 left-0 opacity-80">
+    <app-starfield></app-starfield>
+  </div>
   <!-- Parallax background layers -->
   <div class="parallax-container absolute inset-0 z-0">
     <!-- Far stars layer (moves slowest) -->
-    <div class="stars-container-far absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.far + 'px)'"></div>
+    <!-- <div class="stars-container-far absolute inset-0 z-0"
+      [style.transform]="'translateY(' + parallaxOffsets.far + 'px)'"></div> -->
 
     <!-- Mid stars layer -->
-    <div class="stars-container-mid absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.mid + 'px)'"></div>
+    <!-- <div class="stars-container-mid absolute inset-0 z-0"
+      [style.transform]="'translateY(' + parallaxOffsets.mid + 'px)'"></div> -->
 
     <!-- Near stars layer (moves fastest) -->
-    <div class="stars-container-near absolute inset-0 z-0"
-      [style.transform]="'translateY(' + parallaxOffsets.near + 'px)'"></div>
+    <!-- <div class="stars-container-near absolute inset-0 z-0"
+      [style.transform]="'translateY(' + parallaxOffsets.near + 'px)'"></div> -->
 
     <!-- Nebula effect -->
-    <div class="nebula-effect absolute inset-0 z-0 opacity-80"
+    <div class="nebula-effect absolute inset-0 z-0 opacity-90"
       [style.transform]="'translateY(' + parallaxOffsets.nebula + 'px)'"></div>
   </div>
 

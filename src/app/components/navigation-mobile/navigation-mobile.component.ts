@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './navigation-mobile.component.css'
 })
 export class NavigationMobileComponent {
-  @Input() activeSection: string = 'about';
+  @Input() activeSection: string = 'home';
   navItems = ['About', 'Experience', 'Projects', 'Technologies', 'Contact'];
   isOpen = false;
 
