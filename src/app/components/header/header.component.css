@@ -13,3 +13,37 @@
 .animate-fadeIn {
     animation: fadeIn 1s ease-out forwards;
 }
+
+.h1-con {
+    height: 250px;
+}
+
+@media screen and (min-width: 405px) {
+    .h1-con {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    .h1-con {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 585px) {
+    .h1-con {
+        height: 110px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .h1-con {
+        height: 305px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .h1-con {
+        height: 180px;
+    }
+}
