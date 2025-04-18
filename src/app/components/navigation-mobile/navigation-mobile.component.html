@@ -1,0 +1,25 @@
+<div>
+    <button (click)="toggleMenu()" class="bg-slate-800/80 backdrop-blur-sm p-3 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path *ngIf="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            <path *ngIf="isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+
+    <div *ngIf="isOpen" class="fixed inset-0 bg-slate-900/95 backdrop-blur-sm z-40 flex items-center justify-center">
+        <nav class="py-6">
+            <ul class="space-y-8 text-center">
+                <li *ngFor="let item of navItems">
+                    <a [href]="'#' + item.toLowerCase()" class="text-xl font-medium transition-colors duration-300"
+                        [ngClass]="activeSection === item.toLowerCase() ? 'text-teal-400' : 'text-gray-300 hover:text-white'"
+                        (click)="closeMenu()">
+                        {{ item }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
