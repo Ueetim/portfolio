@@ -32,13 +32,13 @@ export class ProjectsComponent {
       title: 'Webintel',
       description: 'A website analytics and performance monitoring app offering SEO recommendations and AI-driven insights for digital growth.',
       technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'AI APIs'],
-      link: 'https://webintel.netlify.app'
+      link: 'https://webintel.co'
     },
     {
       title: 'Top 100',
       description: 'A platform that ranks the top 100 entities across various industries based on performance, relevance, and data-driven metrics.',
       technologies: ['Angular', 'Tailwind CSS', 'TypeScript', 'REST APIs', 'Chart.js'],
-      link: 'https://thetop100.netlify.app'
+      link: 'https://top100-global.com'
     }
   ];  
 }
