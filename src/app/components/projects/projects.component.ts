@@ -47,7 +47,7 @@ export class ProjectsComponent {
     },
     {
       title: 'MikroTask',
-      description: 'A platform that ranks the top 100 entities across various industries based on performance, relevance, and data-driven metrics.',
+      description: 'A freelance platform for micro tasks that connects clients and skilled professionals, offering fast, secure crypto payments and a data-driven approach to matching the right talent to the right job.',
       technologies: ['Angular', 'Tailwind CSS', 'TypeScript', 'PrimeNG'],
       link: 'https://mikrotask.com',
       screenshot: 'https://mikrotask.com/screenshot.png'
